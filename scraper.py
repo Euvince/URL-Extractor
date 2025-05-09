@@ -1,6 +1,6 @@
 import requests
 from .config import YEARS, ID_PREFIX, MAX_FAILURES, BASE_URL, HEADERS
-from utils import build_case_id, validate_case_id
+from utils import build_case_id
 import json
 
 
