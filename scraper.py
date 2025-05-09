@@ -16,7 +16,7 @@ def run_scraper():
 
     for year in YEARS:
         print(f"🔎 Année : {year}")
-        case_number = 1220
+        case_number = 1
         consecutive_failures = 0
         while consecutive_failures < MAX_FAILURES:
             case_id = build_case_id(ID_PREFIX, case_number, year)
@@ -28,7 +28,7 @@ def run_scraper():
                 print(f"❌ Échec pour {case_id}")
                 consecutive_failures += 1
             case_number += 1
-        print(f"⏭️  Passage à l'année suivante après {MAX_FAILURES} échecs.\n")
+        print(f"⏭️ Passage à l'année suivante après {MAX_FAILURES} échecs.\n")
 
 if __name__ == "__main__":
     run_scraper()

@@ -11,7 +11,7 @@ def simulate_scraping():
 
         while consecutive_failures < MAX_FAILURES:
             case_id = build_case_id(ID_PREFIX, case_number, year)
-            # --- Simulation : disons qu'on a une réponse quand le case_number est 8, 41, etc.
+            # --- Simulation : supposons une réponse quand le case_number est 10 ou 50 ---.
             has_response = case_number in {10, 50}  # à remplacer plus tard par un appel API
             if has_response:
                 print(f"✅ Réponse trouvée pour {case_id}")
