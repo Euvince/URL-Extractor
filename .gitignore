@@ -9,5 +9,4 @@ __pycache__/
 .venv
 
 simulation.py
-main-1.py
-main-2.py
+main-*.py
