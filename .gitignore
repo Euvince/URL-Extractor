@@ -7,3 +7,7 @@ __pycache__/
 .env
 .DS_Store
 .venv
+
+simulation.py
+main-1.py
+main-2.py
